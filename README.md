@@ -12,8 +12,8 @@ NixOS provides the font under the attribute `ibm-plex`
 Fedora/CentOS/RHEL does not provide a package, there might be one in openSUSE or its user repositories?
 
 ### .kshrc
-configures prompt appearance and behaviour as well as aliases for the Korn Shell (ksh93)
-Ubuntu and Debian (and probably most forks) - `sudo apt install ksh`
-Arch and derivatives - `sudo pacman -S ksh`
-NixOS provides ksh93-v under the attribute `ksh`
-Fedora/CentOS/RHEL/openSUSE probably have a package for it but im not delving into rpmfind
+configures prompt appearance and behaviour as well as aliases for the Korn Shell (ksh93)  
+Ubuntu and Debian (and probably most forks) - `sudo apt install ksh`  
+Arch and derivatives - `sudo pacman -S ksh`  
+NixOS provides ksh93-v under the attribute `ksh`  
+Fedora/CentOS/RHEL/openSUSE probably have a package for it but im not delving into rpmfind  
