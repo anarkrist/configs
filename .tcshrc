@@ -1,8 +1,0 @@
-set prompt = '[tcsh] %n on %m in %~ at %T on %D/%W/%Y \n> '
-set VISUAL vi
-set EDITOR vi
-
-set history = 2500
-set histdup = erase
-set savehist = (2500 merge)
-alias precmd 'history -S; history -M'
