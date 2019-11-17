@@ -2,8 +2,8 @@
 configuration files for various things (aka dotfiles)
 
 ### kitty.conf
-configures ternimal appearance and behaviour for the Kitty terminal emulator
-https://sw.kovidgoyal.net/kitty/
+configures ternimal appearance and behaviour for the Kitty terminal emulator  
+https://sw.kovidgoyal.net/kitty/  
 uses IBM Plex Mono font, availible in most distributions package managers or at its github repo  
 https://github.com/IBM/plex  
 Ubuntu and Debian - `sudo apt install fonts-ibm-plex`  
