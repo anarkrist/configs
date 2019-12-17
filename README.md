@@ -3,9 +3,9 @@ configuration files for various things (aka dotfiles)
 
 ### kitty.conf
 configures terminal appearance and behaviour for the Kitty terminal emulator  
-https://sw.kovidgoyal.net/kitty/  
+[Kitty](https://sw.kovidgoyal.net/kitty/)  
 uses IBM Plex Mono font, availible in most distributions package managers or at its github repo  
-https://github.com/IBM/plex  
+[IBM Plex](https://github.com/IBM/plex/)  
 Ubuntu and Debian - `sudo apt install fonts-ibm-plex`  
 Arch or derivatives - `sudo pacman -S ttf-ibm-plex` or the `otf-ibm-plex` AUR package  
 NixOS provides the font under the attribute `ibm-plex`  
@@ -17,3 +17,8 @@ Ubuntu and Debian (and probably most forks) - `sudo apt install ksh`
 Arch and derivatives - `sudo pacman -S ksh`  
 NixOS provides ksh93-v under the attribute `ksh`  
 Fedora/CentOS/RHEL/openSUSE probably have a package for it but im not delving into rpmfind  
+
+### Microsoft.Powershell_profile.ps1
+configures prompt appearance and aliases for Powershell (theoretically on any system with PScore, this one is for Windows)  
+see [the Powershell github page](https://github.com/powershell/powershell) for how to get it on your system  
+on Windows this goes in `%USERPROFILE%/Documents/Powershell/` while on *nix it goes in `~/.config/powershell/` (when I last used it anyway...)
