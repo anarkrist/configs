@@ -21,4 +21,4 @@ Fedora/CentOS/RHEL/openSUSE probably have a package for it but im not delving in
 ### Microsoft.Powershell_profile.ps1
 configures prompt appearance and aliases for Powershell (theoretically on any system with PScore, this one is for Windows)  
 see [the Powershell github page](https://github.com/powershell/powershell) for how to get it on your system  
-on Windows this goes in `%USERPROFILE%/Documents/Powershell/` while on *nix it goes in `~/.config/powershell/` (when I last used it anyway...)
+on Windows this goes in `%USERPROFILE%/Documents/WindowsPowerShell/`, or `%USERPROFILE%/Documents/PowerShell` in PScore, while on \*nix it goes in `~/.config/powershell/` (when I last used it anyway...)
