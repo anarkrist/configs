@@ -22,3 +22,6 @@ Fedora/CentOS/RHEL/openSUSE probably have a package for it but im not delving in
 configures prompt appearance and aliases for Powershell (theoretically on any system with PScore, this one is for Windows)  
 see [the Powershell github page](https://github.com/powershell/powershell) for how to get it on your system  
 on Windows this goes in `%USERPROFILE%/Documents/WindowsPowerShell/`, or `%USERPROFILE%/Documents/PowerShell` in PScore, while on \*nix it goes in `~/.config/powershell/` (when I last used it anyway...)
+
+#### Test-Administrator
+if the window title doesnt indicate for you for any reason this will print `True` if you have administrator privileges and `False` if you do not (in hindsight this might be a bit useless to have in the profile but ive had times where i couldve used this still even if they are few and far)
