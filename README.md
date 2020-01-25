@@ -4,7 +4,7 @@ configuration files for various things (aka dotfiles)
 ### kitty.conf
 configures terminal appearance and behaviour for the Kitty terminal emulator  
 [Kitty](https://sw.kovidgoyal.net/kitty/)  
-Ubuntu - `sudo apt install kitty`
+Ubuntu - `sudo apt install kitty`  
 uses JetBrains Mono font, available from their website with installation instructions 
 [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 `shell` needs to be configured with your current shell correctly, by default most linux distributions use `bash`
