@@ -7,8 +7,3 @@ function Prompt {
 
     "[pwsh] $wai on $hn in $pwd `n> "
 }
-
-
-
-
-
