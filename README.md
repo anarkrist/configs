@@ -19,7 +19,7 @@ NixOS provides ksh93-v under the attribute `ksh`
 Fedora/CentOS/RHEL/openSUSE probably have a package for it but im not delving into rpmfind  
 
 ### Microsoft.Powershell_profile.ps1
-configures prompt appearance and aliases for Powershell (`WIN_` is for Windows, `NIX_` was written for ubuntu but i assume it should work on most other linux if not nix in general 
+configures prompt appearance and aliases for Powershell (`WIN_` is for Windows, `NIX_` was written for ubuntu but i assume it should work on most other linux if not nix in general  
 see [the Powershell github page](https://github.com/powershell/powershell) for how to get it on your system  
 on Windows this goes in `%USERPROFILE%/Documents/WindowsPowerShell/`, or `%USERPROFILE%/Documents/PowerShell` in PScore, while on \*nix it goes in `~/.config/powershell/`.
 
