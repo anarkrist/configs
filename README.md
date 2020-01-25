@@ -4,12 +4,10 @@ configuration files for various things (aka dotfiles)
 ### kitty.conf
 configures terminal appearance and behaviour for the Kitty terminal emulator  
 [Kitty](https://sw.kovidgoyal.net/kitty/)  
-uses IBM Plex Mono font, available in most distributions package managers or at its github repo  
-[IBM Plex](https://github.com/IBM/plex/)  
-Ubuntu and Debian - `sudo apt install fonts-ibm-plex`  
-Arch or derivatives - `sudo pacman -S ttf-ibm-plex` or the `otf-ibm-plex` AUR package  
-NixOS provides the font under the attribute `ibm-plex`  
-Fedora/CentOS/RHEL does not provide a package, there might be one in openSUSE or its user repositories?
+Ubuntu - `sudo apt install kitty`
+uses JetBrains Mono font, available from their website with installation instructions 
+[JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+`shell` needs to be configured with your current shell correctly, by default most linux distributions use `bash`
 
 ### .kshrc
 configures prompt appearance and behaviour as well as aliases for the Korn Shell (ksh93)  
@@ -19,7 +17,7 @@ NixOS provides ksh93-v under the attribute `ksh`
 Fedora/CentOS/RHEL/openSUSE probably have a package for it but im not delving into rpmfind  
 
 ### (WIN_/NIX_)Microsoft.Powershell_profile.ps1
-configures prompt appearance and aliases for Powershell (`WIN_` is for Windows, `NIX_` was written for ubuntu but i assume it should work on most other linux if not nix in general  
+configures prompt appearance and aliases for PowerShell (`WIN_` is for Windows, `NIX_` was written for ubuntu but i assume it should work on most other linux if not nix in general  
 see [the Powershell github page](https://github.com/powershell/powershell) for how to get it on your system  
 on Windows this goes in `%USERPROFILE%/Documents/WindowsPowerShell/`, or `%USERPROFILE%/Documents/PowerShell` in PScore, while on \*nix it goes in `~/.config/powershell/`. Make sure to remove the WIN or NIX prefix.
 
