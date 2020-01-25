@@ -12,7 +12,7 @@ uses JetBrains Mono font, available from their website with installation instruc
 
 ### .kshrc
 configures prompt appearance and behaviour as well as aliases for the Korn Shell (ksh93)  
-the file goes in Home (`~`)
+the file goes in Home (`~`)  
 Ubuntu and Debian (and probably most forks) - `sudo apt install ksh`  
 Arch and derivatives - `sudo pacman -S ksh`  
 NixOS provides ksh93-v under the attribute `ksh`  
