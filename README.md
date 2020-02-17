@@ -26,10 +26,12 @@ on Windows this goes in `%USERPROFILE%/Documents/WindowsPowerShell/`, or `%USERP
 #### Test-Administrator (Windows only (not really needed on \*nix))
 if the window title doesnt indicate for you for any reason this will print `True` if you have administrator privileges and `False` if you do not (in hindsight this might be a bit useless to have in the profile but ive had times where i couldve used this still even if they are few and far)
 
-
 ### autorun.cmd
 this file is configured to be placed under `C:\Users\[user]\AppData\` (not `%appdata%`, which instead goes to `C:\Users\[user]\AppData\Roaming\`).  
 it registers DOSKEY aliases for the Windows Command Prompt (cmd).  
 it needs to be registered in the registry (`regedit`) manually,  
 by creating a string value under `HKCU\Software\Microsoft\Command Processor\` named `AutoRun`,  
 and setting the value to `C:\Users\[user]\AppData\autorun.cmd` (or `%userprofile%\AppData\autorun.cmd` shortened.)
+
+# Licence
+This repository is licenced under the Apache 2.0 Licence. All fonts and software refered to and that these configurations apply to are subject to their own licences.
