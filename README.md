@@ -11,7 +11,7 @@ uses JetBrains Mono font, available from their website with installation instruc
 `shell` needs to be configured with your current shell correctly, by default most linux distributions use `bash`
 
 ### .kshrc
-configures prompt appearance and behaviour as well as aliases for the Korn Shell (ksh93)  
+configures prompt appearance and behaviour as well as aliases for the Korn Shell (ksh2020)  
 the file goes in Home (`~`)  
 Ubuntu and Debian (and probably most forks) - `sudo apt install ksh`  
 Arch and derivatives - `sudo pacman -S ksh`  
