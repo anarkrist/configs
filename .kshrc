@@ -1,4 +1,4 @@
-export PS1=$'[ksh2020] $(logname) on $(hostname -s) in $PWD\n> '
+export PS1=$'[ksh2020] $(whoami) on $(hostname -s) in $PWD\n> '
 export EDITOR=vi
 
 set -o emacs
