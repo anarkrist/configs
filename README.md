@@ -1,6 +1,19 @@
 # configs
 configuration files for various things (aka dotfiles)
 
+### [ubu.]sources.list
+repository sourcing file for apt package manager (this one specifically for Ubuntu, more specifically `focal`,  
+but will hopefully keep up to date with latest ubuntu version in stable,  
+i.e. after `groovy` is released in october 2020, et cetera.  
+this is set to hold the repos for all default Ubuntu repositories and their source repositories, including `-proposed`,  
+as well as the Canonical Partner repository,  
+and the Microsoft repoitories I most use (`prod`, `mssql-server[-2019]`, `azure-cli`, `vscode`, `ms-teams`)  
+It also contains information on each repository with links for more explaination,  
+and notes on other Microsoft products that use other systems to update,  
+i.e. dotNET SDK previews and snapd.  
+File goes in `/etc/apt/` as `sources.list`; you likely already have this file,  
+so just replace (if on `focal`) or append and amend (if on another system; or have other repitories configured already).  
+
 ### kitty.conf
 configures terminal appearance and behaviour for the Kitty terminal emulator  
 [Kitty](https://sw.kovidgoyal.net/kitty/)  
