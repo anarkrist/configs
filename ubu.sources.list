@@ -1,0 +1,72 @@
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+
+# A quick explaination of these repositories can be found at
+# http://help.ubuntu.com/community/Repositories
+
+# ubuntu - Main Ubuntu repository
+deb http://us.archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://us.archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
+
+# ubuntu-security - Security updates to main repostory
+deb http://security.ubuntu.com/ubuntu focal-security main restricted universe multiverse
+deb-src http://security.ubuntu.com/ubuntu focal-security main restricted universe multiverse
+
+# ubuntu-updates - Non-security updates to software in main repository
+deb http://us.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://us.archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
+
+# ubuntu-backports - Backported software from upstream,
+# see http://help.ubuntu.com/community/UbuntuBackports
+deb http://us.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src http://us.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+
+# ubuntu-proposed - Pre-release updates (things may break),
+# see http://wiki.ubuntu.com/Testing/EnableProposed
+deb http://us.archive.ubuntu.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src http://us.archive.ubuntu.com/ubuntu/ focal-proposed main restricted universe multiverse
+
+# canonical-partner - Non-free software from Canonical Ltd. partners,
+# see Activate the Canonical Partner Repository on 
+# http:/help.ubuntu.com/stable/ubuntu-help/addremove-sources.html
+deb http://archive.canonical.com/ubuntu focal partner
+deb-src http://archive.canonical.com/ubuntu focal partner
+
+# packages.microsoft.com - Microsoft package repository,
+# format as .../ubuntu/xx.yy/prod dddd main,
+# xx = major (20 in 20.04), yy = minor (04 in 20.04), dddd = codename
+deb [arch=amd64] https://packages.microsoft.com/ubuntu/20.04/prod focal main
+
+# 18.04/mssql-server-2019 - SQL Server 2019, unsupported but installable on 20.04,
+# if updated sooner or later, should probably change this and possibly reinstall SQL
+deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/mssql-server-2019 bionic main
+
+# ms-teams, vscode packages (possibly azure-cli?) install their own .list files;
+# to keep using the lines set here one should comment the lines out in those files 
+# but keep the file itself; otherwise apt will conflict
+
+# repos/ms-teams - Microsoft Teams
+# stable package 'teams', insiders package 'teams-insiders'
+deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main
+
+# repos/azure-cli - Azure Command Line Interface
+# one package, 'azure-cli'
+deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli focal main
+
+# repos/vscode - Visual Studio Code
+# stable package 'code', insiders package 'code-insiders'
+# exploration package (somewhere a bit past insiders) 'code-exploration'
+deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+
+# Azure Data Studio, while based on VS Code, does not have a repository,
+# manually update it if necessary by downloading its deb installer here:
+# https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio
+
+# the dotNET Core SDK LTS (currently 3.1) is in ms-prod; preview builds should
+# be installed either manually or via snapd, the current latest is 5.0.0 p6,
+# see https://github.com/dotnet/core/blob/master/release-notes/5.0/preview/5.0.0-preview.6-install-instructions.md
+
+# PowerShell is available as single version packages from its Github;
+# see https://github.com/PowerShell/PowerShell#get-powershell
+# for perpetual updates one should also use snapd; see stable, preview
+# https://snapcraft.io/powershell | https://snapcraft.io/powershell-preview
