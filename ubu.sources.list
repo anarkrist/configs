@@ -40,6 +40,9 @@ deb [arch=amd64] https://packages.microsoft.com/ubuntu/20.04/prod focal main
 # 18.04/mssql-server-2019 - SQL Server 2019, unsupported but installable on 20.04,
 # if updated sooner or later, should probably change this and possibly reinstall SQL
 deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/mssql-server-2019 bionic main
+# focal doesn't have SQL command line tools in its repo currently, use 18.04 repo for now
+# after installing tools one should probably comment this out, also update it for 20.04 when updated
+deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
 
 # ms-teams, vscode packages (possibly azure-cli?) install their own .list files;
 # to keep using the lines set here one should comment the lines out in those files 
